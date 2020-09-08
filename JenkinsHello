@@ -2,7 +2,7 @@ pipeline{
   agent any
   stages{
     stage('Build'){
-      step{
+      steps{
         sh 'echo "Hello world"'
         sh '''
           echo "Multiple line shell script"
