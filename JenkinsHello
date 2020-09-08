@@ -1,0 +1,14 @@
+pipeline{
+  agent any
+  stages{
+    stage('Build'){
+      step{
+        sh 'echo "Hello world"'
+        sh '''
+          echo "Multiple line shell script"
+          ls -lah
+        '''
+      }
+    }
+  }
+}
